@@ -31,11 +31,11 @@ body::after {
 
 /* ================= PAGE-SPECIFIC BACKGROUNDS ================= */
 body.sgpa::before {
-  background-image: url("Img4.jpg");
+  background-image: url("./img4.jpg");
 }
 
 body.cgpa::before {
-  background-image: url("Img3.jpg");
+  background-image: url("./img3.jpg");
 }
 
 /* ================= MAIN CONTENT ================= */
@@ -167,4 +167,5 @@ button {
     font-size: 0.9rem;
   }
 }
+
 
