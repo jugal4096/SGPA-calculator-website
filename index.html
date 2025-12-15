@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>GECA SGPA Calculator</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>GECA SGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <h2>GECA SGPA Calculator</h2>
 
-<!-- STEP 1: Choose Scheme -->
-<label for="scheme">Select Scheme: </label>
+<label for="scheme">Select Scheme:</label>
 <select id="scheme">
   <option value="cbc">New CBCS</option>
   <option value="nep">NEP</option>
-  
-
 </select>
 
-<!-- STEP 2: Choose Semester -->
-<label for="semester">Select Semester: </label>
+<label for="semester">Select Semester:</label>
 <select id="semester">
   <option value="3">3rd Semester</option>
   <option value="4">4th Semester</option>
   <option value="5">5th Semester</option>
+  <option value="6">6th Semester</option>
+  <option value="7">7th Semester</option>
+  <option value="8">8th Semester</option>
 </select>
 
 <table id="subjects">
-<tr><th>Subject Name</th><th>Credits</th><th>Grade</th></tr>
+  <tr>
+    <th>Subject Name</th>
+    <th>Credits</th>
+    <th>Grade</th>
+    <th>Action</th>
+  </tr>
 </table>
+
 <button id="add-subject">Add Additional Subject</button>
+
 <div id="results"></div>
+
+<br>
+<a href="cgpa.html">➡ Go to CGPA Calculator</a>
 
 <script src="jugal.js"></script>
 </body>
