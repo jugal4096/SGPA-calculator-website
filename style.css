@@ -31,7 +31,7 @@ body::after {
 
 /* ================= PAGE-SPECIFIC BACKGROUNDS ================= */
 body.sgpa::before {
-  background-image: url("./img4.jpg");
+  background-image: url("./is.jpg");
 }
 
 body.cgpa::before {
@@ -167,5 +167,6 @@ button {
     font-size: 0.9rem;
   }
 }
+
 
 
