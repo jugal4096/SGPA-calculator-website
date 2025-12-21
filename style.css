@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-/* ================= GLOBAL BACKGROUND LAYER ================= */
-html::before {
+/* ================= FULLSCREEN BACKGROUND ================= */
+body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -18,7 +18,7 @@ html::before {
 }
 
 /* ================= DARK OVERLAY ================= */
-html::after {
+body::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -26,15 +26,12 @@ html::after {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* ================= PAGE-SPECIFIC BACKGROUNDS ================= */
-
-/* HOME PAGE */
-body.home html::before {
+/* ================= PAGE-SPECIFIC IMAGES ================= */
+body.home::before {
   background-image: url("Img4.jpg");
 }
 
-/* CGPA PAGE */
-body.cgpa html::before {
+body.cgpa::before {
   background-image: url("is.jpg");
 }
 
@@ -44,7 +41,7 @@ body {
   color: #f9f9f9;
 }
 
-/* CENTERED CONTENT */
+/* ================= CENTERED CONTAINER ================= */
 .container {
   max-width: 900px;
   margin: auto;
