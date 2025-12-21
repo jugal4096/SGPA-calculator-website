@@ -5,14 +5,13 @@
   box-sizing: border-box;
 }
 
-/* ================= FULLSCREEN BACKGROUND ================= */
+/* ================= GLOBAL BACKGROUND LAYER ================= */
 html::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -2;
 
-  background-image: url("is.jpg"); /* ONLY ONE IMAGE */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,13 +26,25 @@ html::after {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* ================= PAGE CONTENT ================= */
+/* ================= PAGE-SPECIFIC BACKGROUNDS ================= */
+
+/* HOME PAGE */
+body.home html::before {
+  background-image: url("Img4.jpg");
+}
+
+/* CGPA PAGE */
+body.cgpa html::before {
+  background-image: url("is.jpg");
+}
+
+/* ================= CONTENT ================= */
 body {
   font-family: Arial, sans-serif;
   color: #f9f9f9;
 }
 
-/* ================= CENTERED CONTAINER ================= */
+/* CENTERED CONTENT */
 .container {
   max-width: 900px;
   margin: auto;
