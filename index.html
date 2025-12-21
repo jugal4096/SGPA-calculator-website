@@ -1,46 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>GECA SGPA Calculator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
+  <div class="container">
 
-<h2>GECA SGPA Calculator</h2>
+    <h2>GECA SGPA Calculator</h2>
 
-<label for="scheme">Select Scheme:</label>
-<select id="scheme">
-  <option value="cbc">New CBCS</option>
-  <option value="nep">NEP</option>
-</select>
+    <label for="scheme">Select Scheme</label>
+    <select id="scheme">
+      <option value="cbc">New CBCS</option>
+      <option value="nep">NEP</option>
+    </select>
 
-<label for="semester">Select Semester:</label>
-<select id="semester">
-  <option value="3">3rd Semester</option>
-  <option value="4">4th Semester</option>
-  <option value="5">5th Semester</option>
-  <option value="6">6th Semester</option>
-  <option value="7">7th Semester</option>
-  <option value="8">8th Semester</option>
-</select>
+    <label for="semester">Select Semester</label>
+    <select id="semester">
+      <option value="3">3rd Semester</option>
+      <option value="4">4th Semester</option>
+      <option value="5">5th Semester</option>
+      <option value="6">6th Semester</option>
+      <option value="7">7th Semester</option>
+      <option value="8">8th Semester</option>
+    </select>
 
-<table id="subjects">
-  <tr>
-    <th>Subject Name</th>
-    <th>Credits</th>
-    <th>Grade</th>
-    <th>Action</th>
-  </tr>
-</table>
+    <table id="subjects">
+      <tr>
+        <th>Subject</th>
+        <th>Credits</th>
+        <th>Grade</th>
+        <th>Action</th>
+      </tr>
+    </table>
 
-<button id="add-subject">Add Additional Subject</button>
+    <button id="add-subject">➕ Add Additional Subject</button>
 
-<div id="results"></div>
+    <div id="results">SGPA: 0.00</div>
 
-<br>
-<a href="cgpa.html">➡ Go to CGPA Calculator</a>
+    <a href="cgpa.html" class="nav-btn">➡ Go to CGPA Calculator</a>
 
-<script src="jugal.js"></script>
+  </div>
+
+  <script src="jugal.js"></script>
 </body>
-</html>
