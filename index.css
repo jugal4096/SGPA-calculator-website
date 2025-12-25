@@ -1,0 +1,228 @@
+/* ================= GOOGLE FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #6366f1, transparent 40%),
+    radial-gradient(circle at bottom right, #22d3ee, transparent 45%),
+    linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 94%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 24px 26px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  animation: fadeIn 0.6s ease;
+}
+
+/* ================= HEADING ================= */
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  font-size: 1.35rem;
+  color: #f1f5f9;
+}
+
+/* ================= LABELS ================= */
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+/* ================= INPUTS & SELECT ================= */
+select,
+input {
+  width: 100%;
+  padding: 9px 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #020617;
+  transition: all 0.25s ease;
+}
+
+/* Dropdown options */
+select option {
+  background: #ffffff;
+  color: #020617;
+}
+
+/* Focus */
+select:focus,
+input:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.45);
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+th {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #e5e7eb;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ================= BUTTONS (GENERAL) ================= */
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+/* ================= ADD BUTTON ================= */
+#add-subject,
+#add-sem {
+  margin-top: 14px;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #ffffff;
+}
+
+#add-subject:hover,
+#add-sem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.45);
+}
+
+/* ================= DELETE BUTTON (❌ CLEAR & INTERACTIVE) ================= */
+.drop-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow:
+    0 6px 14px rgba(255, 75, 43, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.drop-btn:hover {
+  transform: scale(1.15) rotate(6deg);
+  box-shadow:
+    0 10px 26px rgba(255, 65, 108, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/* Active click */
+.drop-btn:active {
+  transform: scale(1.05);
+}
+
+/* ================= RESULT ================= */
+#results,
+#cgpa-result {
+  margin-top: 18px;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* ================= NAV BUTTON ================= */
+.nav-btn {
+  display: block;
+  margin: 18px auto 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #facc15, #fb7185);
+  color: #020617;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(250, 204, 21, 0.45);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  th,
+  td {
+    font-size: 0.72rem;
+  }
+}
+
